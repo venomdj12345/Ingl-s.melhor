@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios | Método das 3 Cores</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>🎨 Método das 3 Cores</h1>
+    <p>Pratique e teste o que aprendeu</p>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="metodo.html">O Método</a>
+    <a href="tabelas.html">Tabelas</a>
+    <a href="exemplos.html">Exemplos</a>
+    <a href="exercicios.html" class="active">Exercícios</a>
+</nav>
+
+<div class="container">
+
+    <section>
+        <h2>✏️ Exercício 1 – Identifique as cores</h2>
+        <div class="pratica-box">
+            <p>Clique nas palavras para ouvir. Depois tente identificar a cor de cada vogal principal:</p>
+            <p style="font-size:1.25rem; font-weight:600; margin:1rem 0; line-height:2.3;">
+                <span class="palavra-clicavel" onclick="falarPalavra('make')">make</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('sit')">sit</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('home')">home</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('cup')">cup</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('time')">time</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('dog')">dog</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('use')">use</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('night')">night</span>
+            </p>
+            <button class="btn" onclick="mostrarRespostas('respostas1')">Mostrar Respostas Coloridas</button>
+            <div id="respostas1" style="display:none; margin-top:1rem;">
+                <p style="line-height:2.1;">
+                    m<span class="cor-verde">a</span>k<span class="cor-vermelho">e</span> &nbsp;•&nbsp;
+                    s<span class="cor-azul">i</span>t &nbsp;•&nbsp;
+                    h<span class="cor-verde">o</span>m<span class="cor-vermelho">e</span> &nbsp;•&nbsp;
+                    c<span class="cor-azul">u</span>p &nbsp;•&nbsp;
+                    t<span class="cor-verde">i</span>m<span class="cor-vermelho">e</span> &nbsp;•&nbsp;
+                    d<span class="cor-azul">o</span>g &nbsp;•&nbsp;
+                    <span class="cor-verde">u</span>s<span class="cor-vermelho">e</span> &nbsp;•&nbsp;
+                    n<span class="cor-verde">i</span>gh<span class="cor-vermelho">t</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>✏️ Exercício 2 – Pinte mentalmente</h2>
+        <div class="pratica-box">
+            <p>Leia a frase e pinte mentalmente com as 3 cores. Depois confira e ouça:</p>
+            <p style="font-size:1.15rem; font-weight:600; background:white; padding:1rem; border-radius:8px;">
+                "The little boy likes to write his name on the white paper at home."
+            </p>
+            <button class="btn verde" onclick="mostrarFraseColorida('frase1')">Ver versão colorida</button>
+            <button class="btn roxo" onclick="falarPalavra('The little boy likes to write his name on the white paper at home')">🔊 Ouvir frase</button>
+            <div id="frase1" style="display:none; margin-top:1rem;">
+                <div class="frase">
+                    <div class="frase-texto">
+                        Th<span class="cor-azul">e</span> l<span class="cor-azul">i</span>ttl<span class="cor-azul">e</span> b<span class="cor-azul">oy</span>
+                        l<span class="cor-verde">i</span>k<span class="cor-vermelho">e</span>s t<span class="cor-azul">o</span>
+                        <span class="cor-vermelho">w</span>r<span class="cor-verde">i</span>t<span class="cor-vermelho">e</span>
+                        h<span class="cor-azul">i</span>s n<span class="cor-verde">a</span>m<span class="cor-vermelho">e</span>
+                        <span class="cor-azul">o</span>n th<span class="cor-azul">e</span>
+                        wh<span class="cor-verde">i</span>t<span class="cor-vermelho">e</span>
+                        p<span class="cor-verde">a</span>p<span class="cor-azul">e</span>r
+                        <span class="cor-azul">a</span>t h<span class="cor-verde">o</span>m<span class="cor-vermelho">e</span>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>🧠 Exercício 3 – Quiz Rápido</h2>
+        <p>Escolha a categoria correta da vogal principal (ou se tem letra muda):</p>
+
+        <div class="quiz-item">
+            <p><strong>1.</strong> Na palavra <strong>cake</strong>, a letra <strong>a</strong> é:</p>
+            <div class="opcoes">
+                <button class="opcao" data-correto="false" onclick="responderQuiz(this, false)">🔵 Neutra/Curta</button>
+                <button class="opcao" data-correto="true" onclick="responderQuiz(this, true)">🟢 Vogal Longa</button>
+                <button class="opcao" data-correto="false" onclick="responderQuiz(this, false)">🔴 Letra Muda</button>
+            </div>
+        </div>
+
+        <div class="quiz-item">
+            <p><strong>2.</strong> Na palavra <strong>know</strong>, a letra <strong>k</strong> é:</p>
+            <div class="opcoes">
+                <button class="opcao" data-correto="false" onclick="responderQuiz(this, false)">🔵 Neutra/Curta</button>
+                <button class="opcao" data-correto="false" onclick="responderQuiz(this, false)">🟢 Vogal Longa</button>
+                <button class="opcao" data-correto="true" onclick="responderQuiz(this, true)">🔴 Letra Muda</button>
+            </div>
+        </div>
+
+        <div class="quiz-item">
+            <p><strong>3.</strong> Na palavra <strong>sit</strong>, a letra <strong>i</strong> é:</p>
+            <div class="opcoes">
+                <button class="opcao" data-correto="true" onclick="responderQuiz(this, true)">🔵 Neutra/Curta</button>
+                <button class="opcao" data-correto="false" onclick="responderQuiz(this, false)">🟢 Vogal Longa</button>
+                <button class="opcao" data-correto="false" onclick="responderQuiz(this, false)">🔴 Letra Muda</button>
+            </div>
+        </div>
+
+        <div class="quiz-item">
+            <p><strong>4.</strong> Na palavra <strong>time</strong>, o <strong>e</strong> final é:</p>
+            <div class="opcoes">
+                <button class="opcao" data-correto="false" onclick="responderQuiz(this, false)">🔵 Neutra/Curta</button>
+                <button class="opcao" data-correto="false" onclick="responderQuiz(this, false)">🟢 Vogal Longa</button>
+                <button class="opcao" data-correto="true" onclick="responderQuiz(this, true)">🔴 Letra Muda</button>
+            </div>
+        </div>
+
+        <div class="quiz-item">
+            <p><strong>5.</strong> Na palavra <strong>beautiful</strong>, o som principal de <strong>eau</strong> é:</p>
+            <div class="opcoes">
+                <button class="opcao" data-correto="false" onclick="responderQuiz(this, false)">🔵 Neutra/Curta</button>
+                <button class="opcao" data-correto="true" onclick="responderQuiz(this, true)">🟢 Vogal Longa</button>
+                <button class="opcao" data-correto="false" onclick="responderQuiz(this, false)">🔴 Letra Muda</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>✏️ Exercício 4 – Mais palavras</h2>
+        <div class="pratica-box">
+            <p>Ouça e classifique mentalmente:</p>
+            <p style="font-size:1.2rem; font-weight:600; line-height:2.4;">
+                <span class="palavra-clicavel" onclick="falarPalavra('friend')">friend</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('people')">people</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('island')">island</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('listen')">listen</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('enough')">enough</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('though')">though</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('through')">through</span> &nbsp;•&nbsp;
+                <span class="palavra-clicavel" onclick="falarPalavra('climb')">climb</span>
+            </p>
+            <button class="btn" onclick="mostrarRespostas('respostas4')">Mostrar análises</button>
+            <div id="respostas4" style="display:none; margin-top:1rem; line-height:2;">
+                <p>fr<span class="cor-azul">ie</span>nd &nbsp;•&nbsp; p<span class="cor-verde">eo</span>pl<span class="cor-vermelho">e</span> &nbsp;•&nbsp; <span class="cor-verde">i</span>sl<span class="cor-azul">a</span>nd &nbsp;•&nbsp; l<span class="cor-azul">i</span>st<span class="cor-azul">e</span>n</p>
+                <p><span class="cor-azul">e</span>n<span class="cor-azul">ou</span>gh &nbsp;•&nbsp; th<span class="cor-verde">ough</span> &nbsp;•&nbsp; thr<span class="cor-verde">ough</span> &nbsp;•&nbsp; cl<span class="cor-verde">i</span>m<span class="cor-vermelho">b</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>✏️ Exercício 5 – Texto completo</h2>
+        <div class="pratica-box">
+            <p>Leia o texto abaixo. Tente “pintar” mentalmente. Depois ouça e confira a versão colorida.</p>
+            <p style="font-size:1.1rem; background:white; padding:1rem; border-radius:8px; line-height:1.8;">
+                "At night the moon is bright. People like to look at the stars and dream about beautiful places."
+            </p>
+            <button class="btn verde" onclick="mostrarFraseColorida('texto5')">Ver versão colorida</button>
+            <button class="btn roxo" onclick="falarPalavra('At night the moon is bright. People like to look at the stars and dream about beautiful places.')">🔊 Ouvir</button>
+            <div id="texto5" style="display:none; margin-top:1rem;">
+                <div class="texto-longo">
+                    <span class="cor-azul">A</span>t n<span class="cor-verde">i</span>gh<span class="cor-vermelho">t</span>
+                    th<span class="cor-azul">e</span> m<span class="cor-verde">oo</span>n <span class="cor-azul">i</span>s
+                    br<span class="cor-verde">i</span>gh<span class="cor-vermelho">t</span>.
+                    P<span class="cor-verde">eo</span>pl<span class="cor-vermelho">e</span>
+                    l<span class="cor-verde">i</span>k<span class="cor-vermelho">e</span> t<span class="cor-azul">o</span>
+                    l<span class="cor-verde">oo</span>k <span class="cor-azul">a</span>t th<span class="cor-azul">e</span>
+                    st<span class="cor-verde">a</span>rs <span class="cor-azul">a</span>nd
+                    dr<span class="cor-verde">ea</span>m <span class="cor-azul">a</span>b<span class="cor-azul">ou</span>t
+                    b<span class="cor-verde">eau</span>t<span class="cor-azul">i</span>f<span class="cor-azul">u</span>l
+                    pl<span class="cor-verde">a</span>c<span class="cor-vermelho">e</span>s.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔊 Ouça o que quiser</h2>
+        <div class="audio-box">
+            <div class="audio-input-group">
+                <input type="text" id="texto-para-falar" placeholder="Digite qualquer palavra ou frase..." value="beautiful places">
+                <button class="btn roxo" id="btn-falar" onclick="falarTexto()">🔊 Ouvir</button>
+                <button class="btn" onclick="pararFala()" style="background:#64748b;">⏹</button>
+            </div>
+            <div id="status-audio">Pronto</div>
+            <div class="voice-controls">
+                <label>Velocidade: <input type="range" id="rate" min="0.5" max="1.5" step="0.1" value="0.9"> <span id="rate-value">0.9</span></label>
+                <label>Tom: <input type="range" id="pitch" min="0.5" max="1.5" step="0.1" value="1"> <span id="pitch-value">1.0</span></label>
+                <label>Voz: <select id="voice-select"></select></label>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Método das 3 Cores • Inglês Melhor</p>
+</footer>
+<script src="js/speech.js"></script>
+</body>
+</html>
