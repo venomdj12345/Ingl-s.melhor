@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas de Referência | Método das 3 Cores</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>🎨 Método das 3 Cores</h1>
+    <p>Tabelas de referência rápida com áudio</p>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="metodo.html">O Método</a>
+    <a href="tabelas.html" class="active">Tabelas</a>
+    <a href="exemplos.html">Exemplos</a>
+    <a href="exercicios.html">Exercícios</a>
+</nav>
+
+<div class="container">
+    <section>
+        <h2>📊 Tabela por Vogal</h2>
+        <p>Clique no 🔊 para ouvir a pronúncia correta.</p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vogal</th>
+                        <th><span class="cor-azul">🔵 Neutra/Curta</span></th>
+                        <th><span class="cor-vermelho">🔴 Letra Muda</span></th>
+                        <th><span class="cor-verde">🟢 Vogal Longa</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>A</strong></td>
+                        <td>c<span class="cor-azul">a</span>t <button class="btn-audio" onclick="falarPalavra('cat')">🔊</button> &nbsp; <span class="cor-azul">a</span>pple <button class="btn-audio" onclick="falarPalavra('apple')">🔊</button></td>
+                        <td>cak<span class="cor-vermelho">e</span> <button class="btn-audio" onclick="falarPalavra('cake')">🔊</button></td>
+                        <td>c<span class="cor-verde">a</span>ke <button class="btn-audio" onclick="falarPalavra('cake')">🔊</button> &nbsp; n<span class="cor-verde">a</span>me <button class="btn-audio" onclick="falarPalavra('name')">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td><strong>E</strong></td>
+                        <td>b<span class="cor-azul">e</span>d <button class="btn-audio" onclick="falarPalavra('bed')">🔊</button> &nbsp; p<span class="cor-azul">e</span>n <button class="btn-audio" onclick="falarPalavra('pen')">🔊</button></td>
+                        <td>lik<span class="cor-vermelho">e</span> <button class="btn-audio" onclick="falarPalavra('like')">🔊</button></td>
+                        <td>m<span class="cor-verde">e</span> <button class="btn-audio" onclick="falarPalavra('me')">🔊</button> &nbsp; sh<span class="cor-verde">e</span> <button class="btn-audio" onclick="falarPalavra('she')">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td><strong>I</strong></td>
+                        <td>s<span class="cor-azul">i</span>t <button class="btn-audio" onclick="falarPalavra('sit')">🔊</button> &nbsp; b<span class="cor-azul">i</span>g <button class="btn-audio" onclick="falarPalavra('big')">🔊</button></td>
+                        <td>l<span class="cor-verde">i</span>k<span class="cor-vermelho">e</span> <button class="btn-audio" onclick="falarPalavra('like')">🔊</button></td>
+                        <td><span class="cor-verde">i</span>ce <button class="btn-audio" onclick="falarPalavra('ice')">🔊</button> &nbsp; t<span class="cor-verde">i</span>me <button class="btn-audio" onclick="falarPalavra('time')">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td><strong>O</strong></td>
+                        <td>h<span class="cor-azul">o</span>t <button class="btn-audio" onclick="falarPalavra('hot')">🔊</button> &nbsp; d<span class="cor-azul">o</span>g <button class="btn-audio" onclick="falarPalavra('dog')">🔊</button></td>
+                        <td>h<span class="cor-verde">o</span>m<span class="cor-vermelho">e</span> <button class="btn-audio" onclick="falarPalavra('home')">🔊</button></td>
+                        <td>g<span class="cor-verde">o</span> <button class="btn-audio" onclick="falarPalavra('go')">🔊</button> &nbsp; n<span class="cor-verde">o</span> <button class="btn-audio" onclick="falarPalavra('no')">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td><strong>U</strong></td>
+                        <td>c<span class="cor-azul">u</span>p <button class="btn-audio" onclick="falarPalavra('cup')">🔊</button> &nbsp; b<span class="cor-azul">u</span>s <button class="btn-audio" onclick="falarPalavra('bus')">🔊</button></td>
+                        <td>c<span class="cor-verde">u</span>t<span class="cor-vermelho">e</span> <button class="btn-audio" onclick="falarPalavra('cute')">🔊</button></td>
+                        <td><span class="cor-verde">u</span>se <button class="btn-audio" onclick="falarPalavra('use')">🔊</button> &nbsp; m<span class="cor-verde">u</span>sic <button class="btn-audio" onclick="falarPalavra('music')">🔊</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>📝 Palavras Comuns Coloridas</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Palavra</th>
+                        <th>Análise com as 3 cores</th>
+                        <th>Pronúncia</th>
+                        <th>Ouvir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>cake</strong></td><td>c<span class="cor-verde">a</span>k<span class="cor-vermelho">e</span></td><td>/keɪk/</td><td><button class="btn-audio" onclick="falarPalavra('cake')">🔊</button></td></tr>
+                    <tr><td><strong>name</strong></td><td>n<span class="cor-verde">a</span>m<span class="cor-vermelho">e</span></td><td>/neɪm/</td><td><button class="btn-audio" onclick="falarPalavra('name')">🔊</button></td></tr>
+                    <tr><td><strong>like</strong></td><td>l<span class="cor-verde">i</span>k<span class="cor-vermelho">e</span></td><td>/laɪk/</td><td><button class="btn-audio" onclick="falarPalavra('like')">🔊</button></td></tr>
+                    <tr><td><strong>home</strong></td><td>h<span class="cor-verde">o</span>m<span class="cor-vermelho">e</span></td><td>/hoʊm/</td><td><button class="btn-audio" onclick="falarPalavra('home')">🔊</button></td></tr>
+                    <tr><td><strong>cute</strong></td><td>c<span class="cor-verde">u</span>t<span class="cor-vermelho">e</span></td><td>/kjuːt/</td><td><button class="btn-audio" onclick="falarPalavra('cute')">🔊</button></td></tr>
+                    <tr><td><strong>apple</strong></td><td><span class="cor-azul">a</span>ppl<span class="cor-azul">e</span></td><td>/ˈæpəl/</td><td><button class="btn-audio" onclick="falarPalavra('apple')">🔊</button></td></tr>
+                    <tr><td><strong>banana</strong></td><td>b<span class="cor-azul">a</span>n<span class="cor-azul">a</span>n<span class="cor-azul">a</span></td><td>/bəˈnænə/</td><td><button class="btn-audio" onclick="falarPalavra('banana')">🔊</button></td></tr>
+                    <tr><td><strong>know</strong></td><td><span class="cor-vermelho">k</span>n<span class="cor-verde">ow</span></td><td>/noʊ/</td><td><button class="btn-audio" onclick="falarPalavra('know')">🔊</button></td></tr>
+                    <tr><td><strong>write</strong></td><td><span class="cor-vermelho">w</span>r<span class="cor-verde">i</span>t<span class="cor-vermelho">e</span></td><td>/raɪt/</td><td><button class="btn-audio" onclick="falarPalavra('write')">🔊</button></td></tr>
+                    <tr><td><strong>night</strong></td><td>n<span class="cor-verde">i</span>gh<span class="cor-vermelho">t</span></td><td>/naɪt/</td><td><button class="btn-audio" onclick="falarPalavra('night')">🔊</button></td></tr>
+                    <tr><td><strong>people</strong></td><td>p<span class="cor-verde">eo</span>pl<span class="cor-vermelho">e</span></td><td>/ˈpiːpəl/</td><td><button class="btn-audio" onclick="falarPalavra('people')">🔊</button></td></tr>
+                    <tr><td><strong>beautiful</strong></td><td>b<span class="cor-verde">eau</span>t<span class="cor-azul">i</span>f<span class="cor-azul">u</span>l</td><td>/ˈbjuːtɪfəl/</td><td><button class="btn-audio" onclick="falarPalavra('beautiful')">🔊</button></td></tr>
+                    <tr><td><strong>friend</strong></td><td>fr<span class="cor-azul">ie</span>nd</td><td>/frɛnd/</td><td><button class="btn-audio" onclick="falarPalavra('friend')">🔊</button></td></tr>
+                    <tr><td><strong>enough</strong></td><td><span class="cor-azul">e</span>n<span class="cor-azul">ou</span>gh</td><td>/ɪˈnʌf/</td><td><button class="btn-audio" onclick="falarPalavra('enough')">🔊</button></td></tr>
+                    <tr><td><strong>though</strong></td><td>th<span class="cor-verde">ough</span></td><td>/ðoʊ/</td><td><button class="btn-audio" onclick="falarPalavra('though')">🔊</button></td></tr>
+                    <tr><td><strong>through</strong></td><td>thr<span class="cor-verde">ough</span></td><td>/θruː/</td><td><button class="btn-audio" onclick="falarPalavra('through')">🔊</button></td></tr>
+                    <tr><td><strong>island</strong></td><td><span class="cor-verde">i</span>sl<span class="cor-azul">a</span>nd</td><td>/ˈaɪlənd/</td><td><button class="btn-audio" onclick="falarPalavra('island')">🔊</button></td></tr>
+                    <tr><td><strong>listen</strong></td><td>l<span class="cor-azul">i</span>st<span class="cor-azul">e</span>n</td><td>/ˈlɪsən/</td><td><button class="btn-audio" onclick="falarPalavra('listen')">🔊</button></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔊 Ouça qualquer palavra</h2>
+        <div class="audio-box">
+            <div class="audio-input-group">
+                <input type="text" id="texto-para-falar" placeholder="Digite aqui..." value="beautiful">
+                <button class="btn roxo" id="btn-falar" onclick="falarTexto()">🔊 Ouvir</button>
+                <button class="btn" onclick="pararFala()" style="background:#64748b;">⏹</button>
+            </div>
+            <div id="status-audio">Pronto</div>
+            <div class="voice-controls">
+                <label>Velocidade: <input type="range" id="rate" min="0.5" max="1.5" step="0.1" value="0.9"> <span id="rate-value">0.9</span></label>
+                <label>Tom: <input type="range" id="pitch" min="0.5" max="1.5" step="0.1" value="1"> <span id="pitch-value">1.0</span></label>
+                <label>Voz: <select id="voice-select"></select></label>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>Método das 3 Cores • Inglês Melhor</p>
+</footer>
+<script src="js/speech.js"></script>
+</body>
+</html>
