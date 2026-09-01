@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método das 3 Cores | Aprenda a Ler Inglês</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>🎨 Método das 3 Cores</h1>
+    <p>Aprenda a ler e pronunciar inglês de forma visual + áudio de IA</p>
+</header>
+
+<nav>
+    <a href="index.html" class="active">Início</a>
+    <a href="metodo.html">O Método</a>
+    <a href="tabelas.html">Tabelas</a>
+    <a href="exemplos.html">Exemplos</a>
+    <a href="exercicios.html">Exercícios</a>
+</nav>
+
+<div class="container">
+    <section>
+        <h2>📖 Bem-vindo!</h2>
+        <p>
+            O inglês tem uma escrita irregular. A mesma letra pode ter sons diferentes.
+            O <strong>Método das 3 Cores</strong> resolve isso de forma visual e simples:
+        </p>
+
+        <div class="legenda">
+            <div class="legenda-item">
+                <div class="bolinha azul"></div>
+                <span class="cor-azul">Azul = Vogais neutras/curtas</span>
+            </div>
+            <div class="legenda-item">
+                <div class="bolinha vermelho"></div>
+                <span class="cor-vermelho">Vermelho = Letras mudas</span>
+            </div>
+            <div class="legenda-item">
+                <div class="bolinha verde"></div>
+                <span class="cor-verde">Verde = Vogais longas</span>
+            </div>
+        </div>
+
+        <div class="destaque">
+            <strong>Regra de ouro:</strong> Quando você vê a cor, já sabe qual som fazer.
+            Combine isso com o áudio de IA do navegador e a aprendizagem fica muito mais rápida.
+        </div>
+
+        <h3>O que você encontra neste site:</h3>
+        <ul style="margin-left:1.4rem; margin-top:0.6rem;">
+            <li><strong>O Método</strong> → explicação completa das 3 categorias</li>
+            <li><strong>Tabelas</strong> → referência rápida com áudio</li>
+            <li><strong>Exemplos</strong> → frases e textos coloridos + áudio</li>
+            <li><strong>Exercícios</strong> → pratique e teste o que aprendeu</li>
+        </ul>
+
+        <p style="margin-top:1.5rem;">
+            <a href="metodo.html" class="btn">Começar pelo Método →</a>
+            <a href="exercicios.html" class="btn verde">Ir direto aos Exercícios</a>
+        </p>
+    </section>
+
+    <section>
+        <h2>🔊 Ouça qualquer palavra agora</h2>
+        <div class="audio-box">
+            <div class="audio-input-group">
+                <input type="text" id="texto-para-falar" placeholder="Digite uma palavra ou frase em inglês..." value="beautiful">
+                <button class="btn roxo" id="btn-falar" onclick="falarTexto()">🔊 Ouvir</button>
+                <button class="btn" onclick="pararFala()" style="background:#64748b;">⏹ Parar</button>
+            </div>
+            <div id="status-audio">Pronto para ouvir</div>
+            <div class="voice-controls">
+                <label>Velocidade: <input type="range" id="rate" min="0.5" max="1.5" step="0.1" value="0.9"> <span id="rate-value">0.9</span></label>
+                <label>Tom: <input type="range" id="pitch" min="0.5" max="1.5" step="0.1" value="1"> <span id="pitch-value">1.0</span></label>
+                <label>Voz: <select id="voice-select"></select></label>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚡ Resumo Rápido das 3 Cores</h2>
+        <div class="categorias">
+            <div class="card azul" style="text-align:center;">
+                <h3 style="justify-content:center;">🔵 Azul</h3>
+                <p>Som curto ou neutro<br>(schwa incluso)</p>
+                <p><small>cat • sit • cup • the</small></p>
+            </div>
+            <div class="card vermelho" style="text-align:center;">
+                <h3 style="justify-content:center;">🔴 Vermelho</h3>
+                <p>Não se pronuncia<br>(letra muda)</p>
+                <p><small>cake • know • write • night</small></p>
+            </div>
+            <div class="card verde" style="text-align:center;">
+                <h3 style="justify-content:center;">🟢 Verde</h3>
+                <p>A vogal fala<br>o próprio nome</p>
+                <p><small>name • time • home • cute</small></p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>Método das 3 Cores • Inglês Melhor</p>
+    <p style="margin-top:0.4rem; font-size:0.85rem;">Usa Web Speech API do navegador (Chrome, Edge, Safari, Firefox)</p>
+</footer>
+
+<script src="js/speech.js"></script>
+</body>
+</html>
