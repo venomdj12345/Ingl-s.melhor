@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Método das 3 Cores | Inglês Melhor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>🎨 Método das 3 Cores</h1>
+    <p>Explicação completa das categorias</p>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="metodo.html" class="active">O Método</a>
+    <a href="tabelas.html">Tabelas</a>
+    <a href="exemplos.html">Exemplos</a>
+    <a href="exercicios.html">Exercícios</a>
+</nav>
+
+<div class="container">
+    <section>
+        <h2>📖 Como Funciona</h2>
+        <p>
+            Em vez de decorar dezenas de regras de fonética, você usa apenas <strong>três cores de caneta</strong>
+            para marcar as vogais e as letras mudas de qualquer texto em inglês.
+        </p>
+        <ol style="margin-left:1.4rem; margin-top:0.7rem;">
+            <li>Pegue um texto curto</li>
+            <li>Marque com <span class="cor-azul">azul</span> as vogais curtas/neutras</li>
+            <li>Marque com <span class="cor-vermelho">vermelho</span> as letras mudas</li>
+            <li>Marque com <span class="cor-verde">verde</span> as vogais longas</li>
+            <li>Leia prestando atenção só na cor</li>
+            <li>Use o áudio para confirmar a pronúncia</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>🎨 As Três Categorias</h2>
+        <div class="categorias">
+            <div class="card azul">
+                <h3>🔵 Vogais Neutras / Curtas</h3>
+                <p>Sons curtos ou reduzidos (incluindo o schwa /ə/).</p>
+                <ul>
+                    <li><span class="palavra-clicavel" onclick="falarPalavra('cat')">cat</span>, <span class="palavra-clicavel" onclick="falarPalavra('apple')">apple</span>, <span class="palavra-clicavel" onclick="falarPalavra('banana')">banana</span></li>
+                    <li><span class="palavra-clicavel" onclick="falarPalavra('bed')">bed</span>, <span class="palavra-clicavel" onclick="falarPalavra('pen')">pen</span>, <span class="palavra-clicavel" onclick="falarPalavra('the')">the</span></li>
+                    <li><span class="palavra-clicavel" onclick="falarPalavra('sit')">sit</span>, <span class="palavra-clicavel" onclick="falarPalavra('big')">big</span>, <span class="palavra-clicavel" onclick="falarPalavra('milk')">milk</span></li>
+                    <li><span class="palavra-clicavel" onclick="falarPalavra('hot')">hot</span>, <span class="palavra-clicavel" onclick="falarPalavra('dog')">dog</span>, <span class="palavra-clicavel" onclick="falarPalavra('mother')">mother</span></li>
+                    <li><span class="palavra-clicavel" onclick="falarPalavra('cup')">cup</span>, <span class="palavra-clicavel" onclick="falarPalavra('bus')">bus</span>, <span class="palavra-clicavel" onclick="falarPalavra('under')">under</span></li>
+                </ul>
+                <p style="margin-top:0.8rem; font-size:0.95rem;"><em>Som aproximado:</em> “uh”, “ih”, “eh” fraco</p>
+            </div>
+
+            <div class="card vermelho">
+                <h3>🔴 Letras Mudas</h3>
+                <p>Letras que se escrevem mas <strong>não se pronunciam</strong>.</p>
+                <ul>
+                    <li><strong>e</strong> final → <span class="palavra-clicavel" onclick="falarPalavra('cake')">cake</span>, <span class="palavra-clicavel" onclick="falarPalavra('name')">name</span>, <span class="palavra-clicavel" onclick="falarPalavra('like')">like</span></li>
+                    <li><strong>gh</strong> → <span class="palavra-clicavel" onclick="falarPalavra('night')">night</span>, <span class="palavra-clicavel" onclick="falarPalavra('light')">light</span>, <span class="palavra-clicavel" onclick="falarPalavra('though')">though</span></li>
+                    <li><strong>k</strong> em kn → <span class="palavra-clicavel" onclick="falarPalavra('know')">know</span>, <span class="palavra-clicavel" onclick="falarPalavra('knife')">knife</span></li>
+                    <li><strong>w</strong> em wr → <span class="palavra-clicavel" onclick="falarPalavra('write')">write</span>, <span class="palavra-clicavel" onclick="falarPalavra('wrong')">wrong</span></li>
+                    <li><strong>b</strong> em mb → <span class="palavra-clicavel" onclick="falarPalavra('climb')">climb</span>, <span class="palavra-clicavel" onclick="falarPalavra('thumb')">thumb</span></li>
+                </ul>
+                <p style="margin-top:0.8rem; font-size:0.95rem;"><em>Regra:</em> pinte de vermelho e <strong>não fale</strong></p>
+            </div>
+
+            <div class="card verde">
+                <h3>🟢 Vogais Longas</h3>
+                <p>A vogal “fala o próprio nome”.</p>
+                <ul>
+                    <li><strong>a</strong> = /eɪ/ → <span class="palavra-clicavel" onclick="falarPalavra('cake')">cake</span>, <span class="palavra-clicavel" onclick="falarPalavra('name')">name</span>, <span class="palavra-clicavel" onclick="falarPalavra('game')">game</span></li>
+                    <li><strong>e</strong> = /iː/ → <span class="palavra-clicavel" onclick="falarPalavra('me')">me</span>, <span class="palavra-clicavel" onclick="falarPalavra('she')">she</span>, <span class="palavra-clicavel" onclick="falarPalavra('these')">these</span></li>
+                    <li><strong>i</strong> = /aɪ/ → <span class="palavra-clicavel" onclick="falarPalavra('ice')">ice</span>, <span class="palavra-clicavel" onclick="falarPalavra('time')">time</span>, <span class="palavra-clicavel" onclick="falarPalavra('nice')">nice</span></li>
+                    <li><strong>o</strong> = /oʊ/ → <span class="palavra-clicavel" onclick="falarPalavra('go')">go</span>, <span class="palavra-clicavel" onclick="falarPalavra('no')">no</span>, <span class="palavra-clicavel" onclick="falarPalavra('home')">home</span></li>
+                    <li><strong>u</strong> = /juː/ → <span class="palavra-clicavel" onclick="falarPalavra('use')">use</span>, <span class="palavra-clicavel" onclick="falarPalavra('cute')">cute</span>, <span class="palavra-clicavel" onclick="falarPalavra('music')">music</span></li>
+                </ul>
+                <p style="margin-top:0.8rem; font-size:0.95rem;"><em>Dica:</em> muitas vezes vêm com o <span class="cor-vermelho">e</span> mudo no final</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>📋 Regras Mais Frequentes</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Situação</th>
+                        <th>Cor principal</th>
+                        <th>Exemplos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vogal + consoante + <strong>e</strong> no final</td>
+                        <td><span class="cor-verde">Verde</span> + <span class="cor-vermelho">Vermelho</span></td>
+                        <td>cake, like, home, cute</td>
+                    </tr>
+                    <tr>
+                        <td>Vogal sozinha no final da sílaba</td>
+                        <td><span class="cor-verde">Verde</span></td>
+                        <td>me, go, he, no</td>
+                    </tr>
+                    <tr>
+                        <td>Vogal entre consoantes (sílaba fechada)</td>
+                        <td><span class="cor-azul">Azul</span></td>
+                        <td>cat, sit, hot, cup</td>
+                    </tr>
+                    <tr>
+                        <td><strong>e</strong> final depois de vogal longa</td>
+                        <td><span class="cor-vermelho">Vermelho</span></td>
+                        <td>name, time, hope</td>
+                    </tr>
+                    <tr>
+                        <td><strong>gh</strong> depois de i ou ou</td>
+                        <td><span class="cor-vermelho">Vermelho</span></td>
+                        <td>night, light, though</td>
+                    </tr>
+                    <tr>
+                        <td><strong>k</strong> antes de n</td>
+                        <td><span class="cor-vermelho">Vermelho</span></td>
+                        <td>know, knife, knee</td>
+                    </tr>
+                    <tr>
+                        <td><strong>w</strong> antes de r</td>
+                        <td><span class="cor-vermelho">Vermelho</span></td>
+                        <td>write, wrong, wrap</td>
+                    </tr>
+                    <tr>
+                        <td>Vogal átona (sem ênfase)</td>
+                        <td><span class="cor-azul">Azul</span> (schwa)</td>
+                        <td>banana, mother, about</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔊 Teste a pronúncia</h2>
+        <div class="audio-box">
+            <div class="audio-input-group">
+                <input type="text" id="texto-para-falar" placeholder="Digite uma palavra..." value="beautiful">
+                <button class="btn roxo" id="btn-falar" onclick="falarTexto()">🔊 Ouvir</button>
+                <button class="btn" onclick="pararFala()" style="background:#64748b;">⏹</button>
+            </div>
+            <div id="status-audio">Pronto</div>
+            <div class="voice-controls">
+                <label>Velocidade: <input type="range" id="rate" min="0.5" max="1.5" step="0.1" value="0.9"> <span id="rate-value">0.9</span></label>
+                <label>Tom: <input type="range" id="pitch" min="0.5" max="1.5" step="0.1" value="1"> <span id="pitch-value">1.0</span></label>
+                <label>Voz: <select id="voice-select"></select></label>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>Método das 3 Cores • Inglês Melhor</p>
+</footer>
+<script src="js/speech.js"></script>
+</body>
+</html>
